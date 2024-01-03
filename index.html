@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pirate Clock Applet</title>
+    <!-- Add any required CSS here -->
+    <style>
+      #clockContainer {
+        position: absolute;
+        top: 40%; /* Adjust this value as needed */
+        left: 60%; /* Adjust this value as needed */
+        transform: translate(-50%, -50%); /* Centers the clock */
+        width: 240px; /* Example width */
+        height: 240px; /* Example height */
+      }
+      #appletContainer {
+        background-image: url('celler.png');
+        background-size: cover; /* This will ensure the image covers the entire container */
+        background-position: center; /* This centers the image in the container */
+        width: 80vw; /* Adjust width as needed */
+        height: 80vh; /* Adjust height as needed */
+        position: relative; /* Needed for positioning other elements inside the container */
+      }
+      #monkeyContainer {
+        position: absolute;
+        top: 58%;
+        left: 35%;
+        width: 350px; /* Example width */
+        height: 350px; /* Example height */
+        /* Additional styling as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="appletContainer">
+      <div id="clockContainer">
+        <!-- SVGs will be displayed here -->
+      </div>
+      <div id="monkeyContainer" style="display: none">
+        <!-- The monkey SVG will be loaded here -->
+      </div>
+    </div>
+
+    <!-- Add your JavaScript file at the end of the body -->
+    <script src="app.js"></script>
+  </body>
+</html>
